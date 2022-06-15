@@ -1,7 +1,7 @@
 多文本框textarea实现高度自适应
 
 
-html： 
+#html： 
 <div class="form-group">
     <label class="col-sm-3 control-label">回复：</label>
     <div class="col-sm-8">
@@ -10,7 +10,7 @@ html：
     </div>
 </div>
 
-css：
+#css：
 <style type="text/css">
     .textarea {
         height: 100%;
@@ -21,7 +21,7 @@ css：
 </style>
 
 
-js：
+#js：
 $('textarea').each(function (i) {
     this.style.height = 'auto';
     this.scrollTop = '0';
@@ -32,4 +32,3 @@ $('textarea').each(function (i) {
         this.style.height = this.scrollHeight + 'px';
     })
 })
-# textareaAutoHeight
